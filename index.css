@@ -1,0 +1,74 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+table{
+     width: 80vw;
+    height: 80vw;
+    max-height: 500px;
+    max-width: 500px;
+    transition-duration: 1s;
+    /*transition-delay: .2s;*/
+    border-collapse: collapse;
+    box-shadow: 0 0 3px 1px;
+}
+.container{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.whitesquare{
+    background-color: #ddd;
+}
+.blacksquare{
+    background-color: #444;
+}
+
+td{
+    width: calc(100% /8 );
+    height: calc(100% /8 );
+    border: none;
+    text-align: center;
+    position: relative;
+}
+span{
+    border-radius: 50%;
+    display: inline-block;
+    box-shadow: 0 0 3px 0 ,  0 0 5px 0 inset;
+    width: 70%;
+    height: 70%;
+    cursor: pointer;
+    font-size: 28px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+.white{
+    background-color: white;
+    
+}
+.black{
+    background-color: #666;
+    box-shadow: 0 0 5px 0 ,  0 0 5px 0 inset;
+}
+.avail{
+    background: radial-gradient(closest-side at 50%,#fff, #444);
+    cursor: pointer;
+}
+.selected{
+    box-shadow: 0 0 10px 0 red inset;
+}
+p{
+    font-size: 1.3em;
+    margin-bottom: 10px;
+}
+.scale{
+transform: scale(1.15);
+}
+.rotate{
+    transform: rotate(180deg) ;
+}
